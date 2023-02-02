@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Hi</h1>
+    <div>
+        <a href="{{ path('app_home') }}">back to homepage</a>
+    </div>
+    <pre>
+        {{ dump(enum) }}
+
+    </pre>
+{% endblock %}
+
+{% block title %}
+
+{% endblock %}

@@ -1,0 +1,51 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+
+    <h1>Hello {{ controller_name }}! ✅</h1>
+
+    Look at my enum routes:
+    <ul>
+        <li>
+            <a href="{{ path('app_home_enumroutenullable') }}">
+                Default page without value
+            </a>
+        </li>
+        <li>
+            <a href="{{ path('app_home_enumroutenullable', {'postEnum': 'vlog'}) }}">
+                Page with VLOG
+            </a>
+        </li>
+        <li>
+            <a href="{{ path('app_home_enumroutenullable', {'postEnum': 'blog'}) }}">
+                Page with blog
+            </a>
+        </li>
+    </ul>
+
+    <div>
+
+        Here are my string routes:
+    </div>
+
+    <ul>
+        <li>
+            <a href="{{ path('app_string_enumroutenullable') }}">
+                Default page without value
+            </a>
+        </li>
+        <li>
+            <a href="{{ path('app_string_enumroutenullable', {'postEnum': 'vlog'}) }}">
+                Page with VLOG
+            </a>
+        </li>
+        <li>
+            <a href="{{ path('app_string_enumroutenullable', {'postEnum': 'blog'}) }}">
+                Page with blog
+            </a>
+        </li>
+    </ul>
+
+{% endblock %}
